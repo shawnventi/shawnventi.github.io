@@ -1,0 +1,19 @@
+# Site settings
+url: "https://shawnventi.github.io"
+baseurl: ""
+
+# Your info
+name: Shawn Venti
+thing_one: Technology
+thing_two: Business
+thing_three: Environment
+
+# Social links
+twitter_url: https://twitter.com/shawn_venti
+instagram_url: https://www.instagram.com/shawnventi/
+github_url: https://github.com/shawnventi
+linkedin_url: https://www.linkedin.com/in/shawnventi
+
+# Plugins
+plugins:
+  - jekyll-seo-tag

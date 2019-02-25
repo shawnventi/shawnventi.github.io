@@ -1,0 +1,107 @@
+---
+---
+
+<!DOCTYPE html>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>{{ site.name }}</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="{{ 'assets/css/noscript.css' | relative_url }}"
+    /></noscript>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ 'assets/css/favicon/apple-touch-icon.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ 'assets/css/favicon/favicon-32x32.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ 'assets/css/favicon/favicon-16x16.png' | relative_url }}"
+    />
+    <link
+      rel="manifest"
+      href="{{ 'assets/css/favicon/site.webmanifest' | relative_url }}"
+    />
+    <script src="{{ 'assets/js/particles.min.js' | relative_url }}"></script>
+    {% seo title=false %}
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <div id="bg"></div>
+
+      <div id="main">
+        <div id="particles-js"></div>
+        <header id="header">
+          <h1>{{ site.name }}</h1>
+          <p>
+            {{ site.thing_one }} &nbsp;&bull;&nbsp;
+            {{ site.thing_two }} &nbsp;&bull;&nbsp;
+            {{ site.thing_three }}
+          </p>
+          <nav>
+            <ul>
+              <li>
+                <a href="{{ site.twitter_url }}" class="icon fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="{{ site.linkedin_url }}" class="icon fa-linkedin"
+                  ><span class="label">Github</span></a
+                >
+              </li>
+              <li>
+                <a href="{{ site.github_url }}" class="icon fa-github"
+                  ><span class="label">Github</span></a
+                >
+              </li>
+              <li>
+                <a href="{{ site.instagram_url }}" class="icon fa-instagram"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <script>
+      window.onload = function() {
+        document.body.classList.remove("is-preload");
+      };
+      window.ontouchmove = function() {
+        return false;
+      };
+      window.onorientationchange = function() {
+        document.body.scrollTop = 0;
+      };
+      particlesJS.load(
+        "particles-js",
+        "assets/config/particles.json",
+        function() {
+          console.log("callback - particles.js config loaded");
+        }
+      );
+    </script>
+  </body>
+</html>
