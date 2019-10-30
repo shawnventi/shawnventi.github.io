@@ -4,9 +4,9 @@ baseurl: ""
 
 # Your info
 name: Shawn Venti
-thing_one: Technology
-thing_two: Business
-thing_three: Environment
+thing_one: Software
+thing_two: Hardware
+thing_three: Design
 
 # Social links
 twitter_url: https://twitter.com/shawn_venti
